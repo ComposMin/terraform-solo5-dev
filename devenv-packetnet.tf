@@ -58,5 +58,5 @@ resource "packet_device" "solo5-dev" {
 }
 
 output "server_ip" {
-    value = "${packet_device.network}"
+    value = "${packet_device.solo5-dev.network}"
 }
